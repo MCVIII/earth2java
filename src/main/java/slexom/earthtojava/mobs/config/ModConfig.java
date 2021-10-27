@@ -12,11 +12,6 @@ import java.util.List;
 
 @Config(name = Earth2JavaMod.MOD_ID)
 public class ModConfig implements ConfigData {
-
-    @ConfigEntry.Category("generation")
-    @ConfigEntry.Gui.CollapsibleObject
-    public MudLakeConfig mudLakeConfig = new MudLakeConfig(true, 25);
-
     @ConfigEntry.Category("entities")
     @ConfigEntry.Gui.CollapsibleObject
     public EntityConfig albinoCow = new EntityConfig(BiomeSpawnHelper.ALBINO_COW_SPAWN_BIOMES, 8);
@@ -100,9 +95,6 @@ public class ModConfig implements ConfigData {
     public EntityConfig mottledPig = new EntityConfig(BiomeSpawnHelper.MOTTLED_PIG_SPAWN_BIOMES, 10);
     @ConfigEntry.Category("entities")
     @ConfigEntry.Gui.CollapsibleObject
-    public EntityConfig muddyPig = new EntityConfig(BiomeSpawnHelper.MUDDY_PIG_SPAWN_BIOMES, 10);
-    @ConfigEntry.Category("entities")
-    @ConfigEntry.Gui.CollapsibleObject
     public EntityConfig muddyFootRabbit = new EntityConfig(BiomeSpawnHelper.MUDDY_FOOT_RABBIT_SPAWN_BIOMES, 4);
     @ConfigEntry.Category("entities")
     @ConfigEntry.Gui.CollapsibleObject
@@ -119,9 +111,6 @@ public class ModConfig implements ConfigData {
     @ConfigEntry.Category("entities")
     @ConfigEntry.Gui.CollapsibleObject
     public EntityConfig pintoCow = new EntityConfig(BiomeSpawnHelper.PINTO_COW_SPAWN_BIOMES, 8);
-    @ConfigEntry.Category("entities")
-    @ConfigEntry.Gui.CollapsibleObject
-    public EntityConfig rainbowSheep = new EntityConfig(BiomeSpawnHelper.RAINBOW_SHEEP_SPAWN_BIOMES, 12);
     @ConfigEntry.Category("entities")
     @ConfigEntry.Gui.CollapsibleObject
     public EntityConfig rockySheep = new EntityConfig(BiomeSpawnHelper.ROCKY_SHEEP_SPAWN_BIOMES, 12);
@@ -190,16 +179,4 @@ public class ModConfig implements ConfigData {
             this(spawnBiomes, weight, 2, 4);
         }
     }
-
-    public static class MudLakeConfig {
-        public boolean canGenerate;
-        @ConfigEntry.BoundedDiscrete(min = 1, max = 100)
-        public int mudLakeFrequency;
-
-        MudLakeConfig(boolean canGenerate, int mudLakeFrequency) {
-            this.canGenerate = canGenerate;
-            this.mudLakeFrequency = mudLakeFrequency;
-        }
-    }
-
 }

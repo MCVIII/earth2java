@@ -28,16 +28,11 @@ public class Earth2JavaMod implements ModInitializer {
         AutoConfig.register(ModConfig.class, GsonConfigSerializer::new);
         ModEvents.init();
         SoundEventsInit.init();
-        FluidInit.init();
         BlockInit.init();
-        BlockEntityTypeInit.init();
-        FeatureInit.init();
-        BiomeInit.init();
         EntityTypesInit.init();
         EntityAttributeInit.init();
         EntitySpawnInit.init();
         ItemInit.init();
-        RecipesInit.init();
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BlockInit.BUTTERCUP.asItem(), 0.65F);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BlockInit.PINK_DAISY.asItem(), 0.65F);
         LOGGER.info("[Earth2Java] Mod loaded! Enjoy :D");

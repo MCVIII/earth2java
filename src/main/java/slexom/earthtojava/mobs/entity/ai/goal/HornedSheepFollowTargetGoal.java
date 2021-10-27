@@ -1,10 +1,10 @@
 package slexom.earthtojava.mobs.entity.ai.goal;
 
-import net.minecraft.entity.ai.goal.FollowTargetGoal;
+import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.player.PlayerEntity;
 import slexom.earthtojava.mobs.entity.passive.HornedSheepEntity;
 
-public class HornedSheepFollowTargetGoal extends FollowTargetGoal<PlayerEntity> {
+public class HornedSheepFollowTargetGoal extends ActiveTargetGoal<PlayerEntity> {
     public HornedSheepFollowTargetGoal(HornedSheepEntity sheepEntity) {
         super(sheepEntity, PlayerEntity.class, true);
     }

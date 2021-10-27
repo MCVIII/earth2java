@@ -186,7 +186,7 @@ public class TropicalSlimeEntity extends HostileEntity {
         return SoundEvents.ENTITY_SLIME_SQUISH;
     }
 
-    public int getLookPitchSpeed() {
+    public int getMaxLookPitchChange() {
         return 0;
     }
 

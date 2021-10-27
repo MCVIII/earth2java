@@ -9,10 +9,8 @@
         "SpawnFurnaceGolem"
     ],
     "client": [
-        "BuiltinModelItemRendererMixin",
         "ClientPlayNetworkHandlerMixin",
-        "EntityModelLoaderMixin",
-        "MudFogMixin"
+        "EntityModelLoaderMixin"
     ],
     "injectors": {
         "defaultRequire": 1

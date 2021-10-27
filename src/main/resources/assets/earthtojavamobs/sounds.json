@@ -187,19 +187,6 @@
             "earthtojavamobs:mob/moolip/plant"
         ]
     },
-    "entity.rainbow_sheep.ambient": {
-        "sounds": [
-            "earthtojavamobs:mob/rainbow_sheep/say_01",
-            "earthtojavamobs:mob/rainbow_sheep/say_02",
-            "earthtojavamobs:mob/rainbow_sheep/say_03"
-        ]
-    },
-    "entity.rainbow_sheep.death": {
-        "sounds": [
-            "earthtojavamobs:mob/rainbow_sheep/death_01",
-            "earthtojavamobs:mob/rainbow_sheep/death_02"
-        ]
-    },
     "entity.skeleton_wolf.ambient": {
         "sounds": [
             "earthtojavamobs:mob/skeleton_wolf/bark_01",

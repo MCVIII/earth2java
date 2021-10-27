@@ -38,7 +38,6 @@ public class EntityAttributeInit {
         registerBaseCowAttributes(EntityTypesInit.WOOLY_COW_REGISTRY_OBJECT);
 
         registerBasePigAttributes(EntityTypesInit.MOTTLED_PIG_REGISTRY_OBJECT);
-        registerBasePigAttributes(EntityTypesInit.MUDDY_PIG_REGISTRY_OBJECT);
         registerBasePigAttributes(EntityTypesInit.PALE_PIG_REGISTRY_OBJECT);
         registerBasePigAttributes(EntityTypesInit.PIEBALD_PIG_REGISTRY_OBJECT);
         registerBasePigAttributes(EntityTypesInit.PINK_FOOTED_PIG_REGISTRY_OBJECT);
@@ -58,7 +57,6 @@ public class EntityAttributeInit {
         registerBaseOneColorSheepAttributes(EntityTypesInit.LONG_NOSED_SHEEP_REGISTRY_OBJECT);
         registerBaseOneColorSheepAttributes(EntityTypesInit.PATCHED_SHEEP_REGISTRY_OBJECT);
         registerBaseOneColorSheepAttributes(EntityTypesInit.ROCKY_SHEEP_REGISTRY_OBJECT);
-        registerBaseOneColorSheepAttributes(EntityTypesInit.RAINBOW_SHEEP_REGISTRY_OBJECT);
         RegisterHelper.registerEntityAttributes(EntityTypesInit.HORNED_SHEEP_REGISTRY_OBJECT, HornedSheepEntity.createHornedSheepAttributes());
 
         RegisterHelper.registerEntityAttributes(EntityTypesInit.FURNACE_GOLEM_REGISTRY_OBJECT, IronGolemEntity.createIronGolemAttributes());

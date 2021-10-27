@@ -2,7 +2,6 @@ package slexom.earthtojava.mobs.init;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.item.BedItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
@@ -42,15 +41,11 @@ public class ItemInit {
     public static E2JSpawnEggItem MOOBLOOM_SPAWN_EGG;
     public static E2JSpawnEggItem MOOLIP_SPAWN_EGG;
     public static E2JSpawnEggItem MUDDY_FOOT_RABBIT_SPAWN_EGG;
-    public static E2JSpawnEggItem MUDDY_PIG_SPAWN_EGG;
-    public static Item MUD_BUCKET;
     public static E2JSpawnEggItem PALE_PIG_SPAWN_EGG;
     public static E2JSpawnEggItem PATCHED_SHEEP_SPAWN_EGG;
     public static E2JSpawnEggItem PIEBALD_PIG_SPAWN_EGG;
     public static E2JSpawnEggItem PINK_FOOTED_PIG_SPAWN_EGG;
     public static E2JSpawnEggItem PINTO_COW_SPAWN_EGG;
-    public static BedItem RAINBOW_BED;
-    public static E2JSpawnEggItem RAINBOW_SHEEP_SPAWN_EGG;
     public static E2JSpawnEggItem ROCKY_SHEEP_SPAWN_EGG;
     public static E2JSpawnEggItem SKELETON_WOLF_SPAWN_EGG;
     public static E2JSpawnEggItem SKEWBALD_CHICKEN_SPAWN_EGG;
@@ -72,9 +67,7 @@ public class ItemInit {
     public static void init() {
         HORN = RegisterHelper.registerItem("horn", new HornItem(new Item.Settings().group(itemGroup).maxCount(64)));
         FANCY_FEATHER = RegisterHelper.registerItem("fancy_feather", new FancyFeatherItem(new Item.Settings().group(itemGroup).maxCount(64)));
-        MUD_BUCKET = RegisterHelper.registerItem("mud_fluid_bucket", new MudBucketItem(FluidInit.MUD_FLUID_STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(itemGroup)));
         BONE_SHARD = RegisterHelper.registerItem("bone_shard", new BoneShardItem(new Item.Settings().group(null).maxCount(16)));
-        RAINBOW_BED = (BedItem) RegisterHelper.registerItem("rainbow_bed", new BedItem(BlockInit.RAINBOW_BED, (new Item.Settings()).maxCount(1).group(ItemGroup.DECORATIONS)));
         registerSpawnEggs();
     }
 
@@ -113,13 +106,11 @@ public class ItemInit {
         MOOLIP_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.MOOLIP_REGISTRY_NAME, EntityTypesInit.MOOLIP_REGISTRY_OBJECT, 0xea88be, 0xf9e7eb);
         MOTTLED_PIG_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.MOTTLED_PIG_REGISTRY_NAME, EntityTypesInit.MOTTLED_PIG_REGISTRY_OBJECT, 0x50403c, 0x806a68);
         MUDDY_FOOT_RABBIT_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.MUDDY_FOOT_RABBIT_REGISTRY_NAME, EntityTypesInit.MUDDY_FOOT_RABBIT_REGISTRY_OBJECT, 0xe5e0dd, 0x463832);
-        MUDDY_PIG_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.MUDDY_PIG_REGISTRY_NAME, EntityTypesInit.MUDDY_PIG_REGISTRY_OBJECT, 0xe6918b, 0x573621);
         PALE_PIG_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.PALE_PIG_REGISTRY_NAME, EntityTypesInit.PALE_PIG_REGISTRY_OBJECT, 0xd3a0a0, 0xead3d3);
         PATCHED_SHEEP_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.PATCHED_SHEEP_REGISTRY_NAME, EntityTypesInit.PATCHED_SHEEP_REGISTRY_OBJECT, 0xf3f0ee, 0x3b4054);
         PIEBALD_PIG_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.PIEBALD_PIG_REGISTRY_NAME, EntityTypesInit.PIEBALD_PIG_REGISTRY_OBJECT, 0xd7c0a9, 0x9b4628);
         PINK_FOOTED_PIG_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.PINK_FOOTED_PIG_REGISTRY_NAME, EntityTypesInit.PINK_FOOTED_PIG_REGISTRY_OBJECT, 0x514246, 0xb39da2);
         PINTO_COW_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.PINTO_COW_REGISTRY_NAME, EntityTypesInit.PINTO_COW_REGISTRY_OBJECT, 0xc16921, 0xd8c4ad);
-        RAINBOW_SHEEP_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.RAINBOW_SHEEP_REGISTRY_NAME, EntityTypesInit.RAINBOW_SHEEP_REGISTRY_OBJECT, 0xffffff, 0xffffff);
         ROCKY_SHEEP_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.ROCKY_SHEEP_REGISTRY_NAME, EntityTypesInit.ROCKY_SHEEP_REGISTRY_OBJECT, 0xa69f9b, 0xe9d0bd);
         SKELETON_WOLF_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.SKELETON_WOLF_REGISTRY_NAME, EntityTypesInit.SKELETON_WOLF_REGISTRY_OBJECT, 0xededed, 0xbababa);
         SKEWBALD_CHICKEN_SPAWN_EGG = registerSpawnEgg(EntityTypesInit.SKEWBALD_CHICKEN_REGISTRY_NAME, EntityTypesInit.SKEWBALD_CHICKEN_REGISTRY_OBJECT, 0xffe8cf, 0x353028);

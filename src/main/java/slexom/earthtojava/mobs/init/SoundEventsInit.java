@@ -29,8 +29,6 @@ public class SoundEventsInit {
     public static final String MELON_GOLEM_SEED_HIT_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.MELON_GOLEM_REGISTRY_NAME, "seed.hit");
     public static final String MOOBLOOM_PLANT_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.MOOBLOOM_REGISTRY_NAME, "plant");
     public static final String MOOLIP_PLANT_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.MOOLIP_REGISTRY_NAME, "plant");
-    public static final String RAINBOW_SHEEP_AMBIENT_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.RAINBOW_SHEEP_REGISTRY_NAME, "ambient");
-    public static final String RAINBOW_SHEEP_DEATH_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.RAINBOW_SHEEP_REGISTRY_NAME, "death");
     public static final String SKELETON_WOLF_AMBIENT_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.SKELETON_WOLF_REGISTRY_NAME, "ambient");
     public static final String SKELETON_WOLF_DEATH_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.SKELETON_WOLF_REGISTRY_NAME, "death");
     public static final String SKELETON_WOLF_GROWL_REGISTRY_NAME = getEntitySoundEventName(EntityTypesInit.SKELETON_WOLF_REGISTRY_NAME, "growl");
@@ -64,8 +62,6 @@ public class SoundEventsInit {
     public static SoundEvent MELON_GOLEM_SEED_HIT;
     public static SoundEvent MOOBLOOM_PLANT;
     public static SoundEvent MOOLIP_PLANT;
-    public static SoundEvent RAINBOW_SHEEP_AMBIENT;
-    public static SoundEvent RAINBOW_SHEEP_DEATH;
     public static SoundEvent SKELETON_WOLF_AMBIENT;
     public static SoundEvent SKELETON_WOLF_DEATH;
     public static SoundEvent SKELETON_WOLF_GROWL;
@@ -101,8 +97,6 @@ public class SoundEventsInit {
         MELON_GOLEM_SEED_HIT = RegisterHelper.registerSoundEvent(MELON_GOLEM_SEED_HIT_REGISTRY_NAME);
         MOOBLOOM_PLANT = RegisterHelper.registerSoundEvent(MOOBLOOM_PLANT_REGISTRY_NAME);
         MOOLIP_PLANT = RegisterHelper.registerSoundEvent(MOOLIP_PLANT_REGISTRY_NAME);
-        RAINBOW_SHEEP_AMBIENT = RegisterHelper.registerSoundEvent(RAINBOW_SHEEP_AMBIENT_REGISTRY_NAME);
-        RAINBOW_SHEEP_DEATH = RegisterHelper.registerSoundEvent(RAINBOW_SHEEP_DEATH_REGISTRY_NAME);
         SKELETON_WOLF_AMBIENT = RegisterHelper.registerSoundEvent(SKELETON_WOLF_AMBIENT_REGISTRY_NAME);
         SKELETON_WOLF_DEATH = RegisterHelper.registerSoundEvent(SKELETON_WOLF_DEATH_REGISTRY_NAME);
         SKELETON_WOLF_GROWL = RegisterHelper.registerSoundEvent(SKELETON_WOLF_GROWL_REGISTRY_NAME);
